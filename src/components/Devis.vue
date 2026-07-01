@@ -201,7 +201,7 @@ function submitForm() {
             Remplissez ce formulaire et nous vous contacterons rapidement.
           </p>
 
-          <form class="mt-8 space-y-5" @submit.prevent="submitForm">
+          <form class="mt-8 space-y-5" @submit.prevent="submitForm" netlify>
             <div class="flex flex-col gap-0.5">
               <input
                 v-model="form.name"
