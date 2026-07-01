@@ -1,18 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
-import BusinessPage from '@/views/BusinessPage.vue'
 import HomePage from '@/views/HomePage.vue'
+import BusinessPage from '@/views/BusinessPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
 
   routes: [
     {
-      path: '/',
-      component: HomePage
-    },
-    {
-      path: '/:business',
+      path: '/:business?',
       name: 'business',
       component: BusinessPage
     }
@@ -20,3 +15,4 @@ const router = createRouter({
 })
 
 export default router
+

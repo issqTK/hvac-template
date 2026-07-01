@@ -33,7 +33,12 @@ import Location from "@/components/Location.vue";
 
 const route = useRoute();
 
-const slug = route.params.business as string;
+const slug =
+  (route.params.business as string | undefined) ||
+  import.meta.env.VITE_BUSINESS ||
+  "climatek";
 
 const business = businesses[slug];
+
+console.log(import.meta.env.VITE_BUSINESS);
 </script>
