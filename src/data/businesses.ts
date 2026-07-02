@@ -32,6 +32,8 @@ export const businesses: Record<string, Business> = {
       hero : {
         title: 'Climatisation & Réfrigération',
         sous_title: 'Installation, réparation et maintenance de systèmes de climatisation pour particuliers et professionnels',
+        heroImage: '/images/heroImage.png',
+        heroImageMobile: '/images/heroImageMobile.png'
       },
 
       featuredReviews: [
@@ -104,106 +106,108 @@ export const businesses: Record<string, Business> = {
 
     },
    
-    cfcb: {
-      slug: "cfcb",
+   wsmn: {
+    slug: "wsmn",
 
-      name: "C.F.C.B Sarl",
-      city: "El Jadida",
+    name: "WSMN Multi-services",
+    city: "El Jadida",
 
-      phone: "0523371980",
-      whatsapp: "212523371980",
+    phone: "0679730604",
+    whatsapp: "0679730604",
 
-      address: "Av. Bir Anzarane, El Jadida",
+    address: "Résidence Al Boustane, Appt 26 imm 29, El Jadida 24400",
 
-      mapEmbedUrl:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.5157439318664!2d-8.4936706!3d33.22678949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91e0535bc47bd%3A0x5b37e99d300a593f!2sC.F.C.B%20Sarl!5e0!3m2!1sen!2sma!4v1782922362427!5m2!1sen!2sma',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.353868718027!2d-8.4865048!3d33.2310316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91fb2209f61ff%3A0xbf3e0e1407b7dbe3!2sWSMN%20Multi-services!5e0!3m2!1sen!2sma!4v1783022794648!5m2!1sen!2sma',
 
-      category: "Air conditioning contractor",
+    category: "Machine maintenance service",
 
-      rating: 4.9,
-      reviews: 12,
+    rating: 4.5,
+    reviews: 80,
 
-      hero: {
-        title: "Climatisation & Ventilation",
-        sous_title:
-          "Installation, maintenance et solutions de ventilation pour particuliers, commerces et entreprises.",
+    quoteServices: [
+      "Climatisation",
+      "Chambre froide",
+      "Électricité",
+      "Caméras de surveillance",
+      "Plomberie",
+      "Énergie solaire",
+      "Maintenance",
+      "Autre",
+    ],
+
+    hero: {
+      title: "Maintenance Technique & Multi-services",
+      sous_title:
+        "Installation, maintenance et dépannage en climatisation, froid industriel, électricité, plomberie et énergie solaire.",
+      heroImage: '/images/heroImage.png',
+      heroImageMobile: '/images/heroImageMobile.png'
+    },
+
+    featuredReviews: [
+      {
+        author: "Aicha El",
+        rating: 5,
+        date: "Google",
+        text: "Excellent and highly professional service."
+      },
+      {
+        author: "Khallad Hind",
+        rating: 5,
+        date: "Google",
+        text: "Helpful and timely company for cold room installation and air conditioning."
+      },
+      {
+        author: "Nawfel Mouhoub",
+        rating: 5,
+        date: "Google",
+        text: "Recommended company for electrical installation, security cameras and plumbing."
+      }
+    ],
+
+    gallery: [
+      "/images/wsmn/gallery/1.png",
+      "/images/wsmn/gallery/2.png",
+      "/images/wsmn/gallery/3.png",
+      "/images/wsmn/gallery/4.png",
+      "/images/wsmn/gallery/5.png",
+      "/images/wsmn/gallery/6.png",
+    ],
+
+    services: {
+      heading: {
+        badge: "Nos Services",
+        title: "Maintenance & Installation Technique",
+        subtitle:
+          "Des solutions professionnelles pour la climatisation, le froid industriel, l'électricité, la plomberie et les systèmes techniques."
       },
 
-      featuredReviews: [
+      items: [
         {
-          author: "mohamed amine",
-          rating: 5,
-          date: "Google",
-          text: "Très bon service, des gens très sérieux."
+          title: "Climatisation",
+          badge: "Installation",
+          icon: "snowflake",
+          image: "/images/wsmn/services/climatisation.webp",
+          description:
+            "Installation, entretien et réparation de climatiseurs."
         },
         {
-          author: "Meryem elkamoun",
-          rating: 5,
-          date: "Google",
-          text: "Trés bonne qualité de service. Le service aprés vente a bien été assuré. Je recommende.."
+          title: "Chambres froides",
+          badge: "Froid industriel",
+          icon: "warehouse",
+          image: "/images/wsmn/services/cold-room.jpg",
+          description:
+            "Installation et maintenance de chambres froides et équipements frigorifiques."
         },
         {
-          author: "Aymane Saddaaq",
-          rating: 5,
-          date: "Google",
-          text: "Des gens sérieux et professionnels"
+          title: "Électricité & Multi-services",
+          badge: "Maintenance",
+          icon: "bolt",
+          image: "/images/wsmn/services/electricity.webp",
+          description:
+            "Travaux électriques, plomberie, caméras de surveillance et solutions techniques."
         }
-      ],
-
-      gallery: [
-        "/images/heroImage.png",
-        "/images/climatek/gallery/1.png",
-        "/images/climatek/gallery/2.png",
-        "/images/climatek/gallery/3.png",
-        "/images/climatek/gallery/4.png",
-        "/images/climatek/gallery/5.png",
-        "/images/climatek/gallery/6.png",
-
-      ],
-
-      quoteServices : [
-        "Climatisation",
-        "Ventilation",
-        "Maintenance",
-        "Installation",
-        "Entretien",
-        "Autre",
-      ],
-
-      services: {
-        heading: {
-          badge: "Nos Services",
-          title: "Installation, Ventilation & Maintenance",
-          subtitle:
-            "Nous proposons des solutions professionnelles de climatisation, ventilation et entretien pour garantir votre confort toute l'année."
-        },
-
-        items: [
-          {
-            title: "Installation de climatisation",
-            badge: "Installation",
-            icon: "snowflake",
-            image: "/images/climatek/services/installation.png",
-            description:
-              "Installation de systèmes de climatisation adaptés aux logements, bureaux et locaux professionnels."
-          },
-          {
-            title: "Ventilation",
-            badge: "VMC",
-            icon: "fan",
-            image: "/images/cfcb/services/ventilation.jpg",
-            description:
-              "Installation de solutions de ventilation pour améliorer la qualité de l'air intérieur."
-          },
-          {
-            title: "Maintenance",
-            badge: "Entretien",
-            icon: "shield-check",
-            image: "/images/climatek/services/ac-maintenance.png",
-            description:
-              "Entretien préventif et maintenance régulière pour préserver les performances de vos équipements."
-          }
-        ]
-      }
+      ]
+    }
     },
 
     aeris: {
@@ -240,6 +244,8 @@ export const businesses: Record<string, Business> = {
         title: "Climatisation & Solutions Énergétiques",
         sous_title:
           "Installation de climatisation, pompes à chaleur et maintenance pour améliorer votre confort tout en réduisant votre consommation d'énergie.",
+        heroImage: '/images/heroImage.png',
+        heroImageMobile: '/images/heroImageMobile.png'
       },
 
       featuredReviews: [

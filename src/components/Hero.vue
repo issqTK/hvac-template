@@ -11,7 +11,13 @@ defineProps<{
     class="relative overflow-hidden bg-slate-950 text-white min-h-screen flex items-center mt-20"
   >
     <!-- Background -->
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg" />
+    <div
+      :style="{
+        '--hero-image': `url(${company.hero.heroImage})`,
+        '--hero-image-mobile': `url(${company.hero.heroImageMobile})`,
+      }"
+      class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg"
+    />
 
     <div
       class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 opacity-80 sm:opacity-70"
@@ -27,7 +33,7 @@ defineProps<{
 
     <!-- Content -->
     <div
-      class="relative !mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20"
+      class="relative !mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:grid lg:grid-cols-[2fr_1fr] lg:items-center lg:gap-20"
     >
       <!-- Left -->
       <div class="flex flex-col items-start gap-9">
@@ -213,12 +219,14 @@ defineProps<{
   animation: heroZoom 10s ease-in-out infinite alternate;
   transform-origin: center;
   will-change: transform;
-  background-image: url("/images/heroImage.png");
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 767px) {
   .hero-bg {
-    background-image: url("/images/heroImageMobile.png");
+    background-image: var(--hero-image-mobile);
   }
 }
 @keyframes fadeUp {

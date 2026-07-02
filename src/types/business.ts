@@ -1,6 +1,8 @@
 export interface Hero {
   title: string
   sous_title: string
+  heroImage: string
+  heroImageMobile: string
 }
 
 export interface Service {

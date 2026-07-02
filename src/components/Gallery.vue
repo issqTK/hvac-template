@@ -4,6 +4,16 @@ import SectionHeader from "@/components/reusable/SectionHeader.vue";
 import { vIntersectionObserver } from "@vueuse/components";
 import { ref } from "vue";
 
+const selectedImage = ref<string | null>(null);
+
+const openImage = (image: string) => {
+  selectedImage.value = image;
+};
+
+const closeImage = () => {
+  selectedImage.value = null;
+};
+
 defineProps<{
   company: Business;
 }>();
@@ -45,6 +55,7 @@ const onIntersection = (
           ]"
           :style="{ '--i': index }"
           class="group relative overflow-hidden rounded-3xl shadow-sm"
+          @click="openImage(image)"
         >
           <img
             :src="image"
@@ -65,6 +76,31 @@ const onIntersection = (
           </div>
         </div>
       </div>
+
+      <Teleport to="body">
+        <Transition name="fade">
+          <div
+            v-if="selectedImage"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            @click="closeImage"
+          >
+            <!-- Close button -->
+            <button
+              class="absolute top-6 right-6 text-white text-4xl hover:scale-110 transition"
+              @click.stop="closeImage"
+            >
+              ✕
+            </button>
+
+            <!-- Image -->
+            <img
+              :src="selectedImage"
+              class="max-w-full max-h-[90vh] rounded-xl shadow-2xl"
+              @click.stop
+            />
+          </div>
+        </Transition>
+      </Teleport>
     </div>
   </section>
 </template>

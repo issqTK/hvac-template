@@ -51,11 +51,11 @@ const onIntersection = (
               <img
                 :src="service.image"
                 :alt="service.title"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                class="h-full w-full object-cover transition duration-500"
               />
 
               <div
-                class="absolute inset-0 bg-gradient-to-t from-white/70 via-white/30 to-transparent group-hover:via-transparent"
+                class="absolute inset-0 bg-gradient-to-t from-white/70 via-white/10 to-transparent group-hover:via-transparent"
               ></div>
 
               <span
