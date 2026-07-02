@@ -11,13 +11,10 @@ defineProps<{
     class="relative overflow-hidden bg-slate-950 text-white min-h-screen flex items-center mt-20"
   >
     <!-- Background -->
-    <div
-      :style="{ backgroundImage: `url(${company.hero.image})` }"
-      class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg"
-    />
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg" />
 
     <div
-      class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 opacity-70"
+      class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 opacity-80 sm:opacity-70"
     />
 
     <div
@@ -30,7 +27,7 @@ defineProps<{
 
     <!-- Content -->
     <div
-      class="relative !mx-auto max-w-7xl px-6 py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20"
+      class="relative !mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20"
     >
       <!-- Left -->
       <div class="flex flex-col items-start gap-9">
@@ -52,12 +49,14 @@ defineProps<{
           {{ company.hero.title }}
         </h2>
 
-        <p class="fade-up delay-4 max-w-xl text-lg leading-8 text-slate-300">
+        <p
+          class="fade-up delay-4 max-w-xl text-lg leading-8 text-slate-300 text-justify"
+        >
           {{ company.hero.sous_title }} à {{ company.city }}.
         </p>
 
         <!-- CTA BUTTONS -->
-        <div class="fade-up delay-5 flex flex-col sm:flex-row gap-4">
+        <div class="fade-up delay-5 flex flex-col w-full sm:flex-row gap-4">
           <a
             :href="`tel:${company.phone}`"
             class="flex items-center justify-center gap-1.5 rounded-xl bg-sky-600 px-8 py-4 text-center font-semibold transition hover:bg-sky-500"
@@ -95,7 +94,7 @@ defineProps<{
         </div>
 
         <div
-          class="fade-up delay-6 grid grid-cols-2 gap-6 text-sm text-slate-300 md:grid-cols-4 mt-6"
+          class="fade-up delay-6 grid grid-cols-2 gap-6 w-full text-sm text-slate-300 md:grid-cols-4 mt-6"
         >
           <div class="flex flex-col items-center !gap-2 text-sm">
             <svg
@@ -199,6 +198,8 @@ defineProps<{
 </template>
 
 <style scoped>
+* {
+}
 @keyframes heroZoom {
   0% {
     transform: scale(1);
@@ -212,8 +213,14 @@ defineProps<{
   animation: heroZoom 10s ease-in-out infinite alternate;
   transform-origin: center;
   will-change: transform;
+  background-image: url("/images/heroImage.png");
 }
 
+@media (max-width: 767px) {
+  .hero-bg {
+    background-image: url("/images/heroImageMobile.png");
+  }
+}
 @keyframes fadeUp {
   from {
     opacity: 0;

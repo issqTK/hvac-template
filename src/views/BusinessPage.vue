@@ -1,21 +1,23 @@
 <template>
-  <Header v-if="business" :business="business" />
+  <div class="w-full overflow-auto">
+    <Header v-if="business" :business="business" />
 
-  <Hero v-if="business" :company="business" />
+    <Hero v-if="business" :company="business" />
 
-  <Services v-if="business" :company="business" />
+    <Services v-if="business" :company="business" />
 
-  <WhyChooseUs v-if="business" :company="business" />
+    <WhyChooseUs v-if="business" :company="business" />
 
-  <Gallery v-if="business" :company="business" />
+    <Gallery v-if="business" :company="business" />
 
-  <Reviews v-if="business" :company="business" />
+    <Reviews v-if="business" :company="business" />
 
-  <Devis v-if="business" :company="business" />
+    <Devis v-if="business" :company="business" />
 
-  <Location v-if="business" :company="business" />
+    <Location v-if="business" :company="business" />
 
-  <Footer v-if="business" :business="business" />
+    <Footer v-if="business" :business="business" />
+  </div>
 </template>
 
 <script setup lang="ts">

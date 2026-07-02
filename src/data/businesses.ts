@@ -32,7 +32,6 @@ export const businesses: Record<string, Business> = {
       hero : {
         title: 'Climatisation & Réfrigération',
         sous_title: 'Installation, réparation et maintenance de systèmes de climatisation pour particuliers et professionnels',
-        image: '/images/businesses/climatek/heroImage.png'
       },
 
       featuredReviews: [
@@ -57,13 +56,13 @@ export const businesses: Record<string, Business> = {
       ],
 
       gallery: [
-        "/images/businesses/climatek/heroImage.png",
-        "/images/businesses/climatek/gallery/1.png",
-        "/images/businesses/climatek/gallery/2.png",
-        "/images/businesses/climatek/gallery/3.png",
-        "/images/businesses/climatek/gallery/4.png",
-        "/images/businesses/climatek/gallery/5.png",
-        "/images/businesses/climatek/gallery/6.png",
+        "/images/heroImage.png",
+        "/images/climatek/gallery/1.png",
+        "/images/climatek/gallery/2.png",
+        "/images/climatek/gallery/3.png",
+        "/images/climatek/gallery/4.png",
+        "/images/climatek/gallery/5.png",
+        "/images/climatek/gallery/6.png",
 
       ],
 
@@ -80,7 +79,7 @@ export const businesses: Record<string, Business> = {
             title: "Installation de climatisation",
             badge: "Installation",
             icon: "snowflake",
-            image: "/images/businesses/climatek/services/installation.png",
+            image: "/images/climatek/services/installation.png",
             description:
               "Installation de climatiseurs résidentiels, commerciaux et systèmes multi-split."
           },
@@ -88,7 +87,7 @@ export const businesses: Record<string, Business> = {
             title: "Réparation",
             badge: "Dépannage",
             icon: "wrench",
-            image: "/images/businesses/climatek/services/ac-repair.png",
+            image: "/images/climatek/services/ac-repair.png",
             description:
               "Diagnostic et réparation rapide de toutes les marques de climatiseurs."
           },
@@ -96,7 +95,7 @@ export const businesses: Record<string, Business> = {
             title: "Maintenance",
             badge: "Entretien",
             icon: "shield-check",
-            image: "/images/businesses/climatek/services/ac-maintenance.png",
+            image: "/images/climatek/services/ac-maintenance.png",
             description:
               "Nettoyage, recharge de gaz et maintenance préventive."
           }
@@ -127,7 +126,6 @@ export const businesses: Record<string, Business> = {
         title: "Climatisation & Ventilation",
         sous_title:
           "Installation, maintenance et solutions de ventilation pour particuliers, commerces et entreprises.",
-        image: '/images/businesses/climatek/heroImage.png'
       },
 
       featuredReviews: [
@@ -152,13 +150,13 @@ export const businesses: Record<string, Business> = {
       ],
 
       gallery: [
-        "/images/businesses/climatek/heroImage.png",
-        "/images/businesses/climatek/gallery/1.png",
-        "/images/businesses/climatek/gallery/2.png",
-        "/images/businesses/climatek/gallery/3.png",
-        "/images/businesses/climatek/gallery/4.png",
-        "/images/businesses/climatek/gallery/5.png",
-        "/images/businesses/climatek/gallery/6.png",
+        "/images/heroImage.png",
+        "/images/climatek/gallery/1.png",
+        "/images/climatek/gallery/2.png",
+        "/images/climatek/gallery/3.png",
+        "/images/climatek/gallery/4.png",
+        "/images/climatek/gallery/5.png",
+        "/images/climatek/gallery/6.png",
 
       ],
 
@@ -184,7 +182,7 @@ export const businesses: Record<string, Business> = {
             title: "Installation de climatisation",
             badge: "Installation",
             icon: "snowflake",
-            image: "/images/businesses/climatek/services/installation.png",
+            image: "/images/climatek/services/installation.png",
             description:
               "Installation de systèmes de climatisation adaptés aux logements, bureaux et locaux professionnels."
           },
@@ -192,7 +190,7 @@ export const businesses: Record<string, Business> = {
             title: "Ventilation",
             badge: "VMC",
             icon: "fan",
-            image: "/images/businesses/cfcb/services/ventilation.jpg",
+            image: "/images/cfcb/services/ventilation.jpg",
             description:
               "Installation de solutions de ventilation pour améliorer la qualité de l'air intérieur."
           },
@@ -200,7 +198,7 @@ export const businesses: Record<string, Business> = {
             title: "Maintenance",
             badge: "Entretien",
             icon: "shield-check",
-            image: "/images/businesses/climatek/services/ac-maintenance.png",
+            image: "/images/climatek/services/ac-maintenance.png",
             description:
               "Entretien préventif et maintenance régulière pour préserver les performances de vos équipements."
           }
@@ -228,13 +226,13 @@ export const businesses: Record<string, Business> = {
       reviews: 600,
 
       gallery: [
-        "/images/businesses/climatek/heroImage.png",
-        "/images/businesses/climatek/gallery/1.png",
-        "/images/businesses/climatek/gallery/2.png",
-        "/images/businesses/climatek/gallery/3.png",
-        "/images/businesses/climatek/gallery/4.png",
-        "/images/businesses/climatek/gallery/5.png",
-        "/images/businesses/climatek/gallery/6.png",
+        "/images/heroImage.png",
+        "/images/climatek/gallery/1.png",
+        "/images/climatek/gallery/2.png",
+        "/images/climatek/gallery/3.png",
+        "/images/climatek/gallery/4.png",
+        "/images/climatek/gallery/5.png",
+        "/images/climatek/gallery/6.png",
 
       ],
 
@@ -242,7 +240,6 @@ export const businesses: Record<string, Business> = {
         title: "Climatisation & Solutions Énergétiques",
         sous_title:
           "Installation de climatisation, pompes à chaleur et maintenance pour améliorer votre confort tout en réduisant votre consommation d'énergie.",
-        image: '/images/businesses/climatek/heroImage.png'
       },
 
       featuredReviews: [
@@ -288,7 +285,7 @@ export const businesses: Record<string, Business> = {
             title: "Installation de climatisation",
             badge: "Climatisation",
             icon: "snowflake",
-            image: "/images/businesses/climatek/services/installation.png",
+            image: "/images/climatek/services/installation.png",
             description:
               "Installation de systèmes de climatisation performants pour les habitations et les espaces professionnels."
           },
@@ -296,7 +293,7 @@ export const businesses: Record<string, Business> = {
             title: "Pompes à chaleur",
             badge: "Économie d'énergie",
             icon: "leaf",
-            image: "/images/businesses/aeris/services/heat-pump-installation.png",
+            image: "/images/aeris/services/heat-pump-installation.png",
             description:
               "Installation de pompes à chaleur offrant une solution de chauffage et de climatisation économique."
           },
@@ -304,7 +301,7 @@ export const businesses: Record<string, Business> = {
             title: "Maintenance",
             badge: "Service",
             icon: "shield-check",
-            image: "/images/businesses/climatek/services/ac-maintenance.png",
+            image: "/images/climatek/services/ac-maintenance.png",
             description:
               "Maintenance préventive et entretien afin d'assurer la longévité et les performances de vos équipements."
           }

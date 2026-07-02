@@ -1,7 +1,6 @@
 export interface Hero {
   title: string
   sous_title: string
-  image:string
 }
 
 export interface Service {

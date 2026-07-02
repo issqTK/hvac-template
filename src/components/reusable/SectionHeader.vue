@@ -27,7 +27,7 @@ const onHeadingIntersection = (entries: IntersectionObserverEntry[]) => {
     <span
       v-if="badge"
       :class="[
-        'fade-in inline-flex rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700',
+        'fade-in mb-6 inline-flex rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700',
         mode === 'dark' ? 'bg-slate-800 text-white' : 'bg-sky-100 text-sky-700',
         { visible: headingVisible },
       ]"
@@ -37,7 +37,7 @@ const onHeadingIntersection = (entries: IntersectionObserverEntry[]) => {
     </span>
     <h2
       :class="[
-        'fade-in mt-6 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight',
+        'fade-in text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight',
         mode === 'dark' ? 'text-white' : 'text-slate-900',
         { visible: headingVisible },
       ]"

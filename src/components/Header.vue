@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur shadow border-b border-slate-200 !w-full"
+    class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur shadow border-b border-slate-200"
   >
     <div class="max-w-7xl !mx-auto px-2 sm:px-4">
       <div class="flex h-20 items-center justify-between">
@@ -12,7 +12,7 @@
             {{ business.name.charAt(0) }}
           </div>
 
-          <div class="hidden sm:block">
+          <div class="block">
             <h2 class="font-bold text-lg text-slate-900">
               {{ business.name }}
             </h2>
