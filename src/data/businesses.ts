@@ -171,6 +171,7 @@ export const businesses: Record<string, Business> = {
       "/images/wsmn/gallery/4.png",
       "/images/wsmn/gallery/5.png",
       "/images/wsmn/gallery/6.png",
+      "/images/wsmn/gallery/8.png",
     ],
 
     services: {
