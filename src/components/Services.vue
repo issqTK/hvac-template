@@ -70,7 +70,7 @@ const onIntersection = (
               <!-- Icon -->
               <div
                 v-html="service.icon"
-                class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 transition-all duration-300 group-hover:bg-sky-500 group-hover:text-white"
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-500 transition-all duration-300 group-hover:bg-sky-500 group-hover:text-white"
               ></div>
 
               <h3
