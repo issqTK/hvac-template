@@ -69,11 +69,9 @@ const onIntersection = (
             <div class="p-7">
               <!-- Icon -->
               <div
+                v-html="service.icon"
                 class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 transition-all duration-300 group-hover:bg-sky-500 group-hover:text-white"
-              >
-                <!-- Temporary icon -->
-                <span class="text-2xl">❄️</span>
-              </div>
+              ></div>
 
               <h3
                 class="mb-4 text-2xl font-semibold text-slate-900 transition-colors group-hover:text-sky-600"
