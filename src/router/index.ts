@@ -4,8 +4,12 @@ import BusinessPage from '@/views/BusinessPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
-
   routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomePage
+    },
     {
       path: '/:business?',
       name: 'business',
@@ -15,4 +19,3 @@ const router = createRouter({
 })
 
 export default router
-

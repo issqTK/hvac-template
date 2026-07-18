@@ -64,6 +64,7 @@ const onIntersection = (
         >
           <img
             :src="image"
+            loading="lazy"
             :alt="`${company.name} réalisation ${index + 1}`"
             class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
           />

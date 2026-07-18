@@ -11,7 +11,7 @@
               {{ business.name.charAt(0) }}
             </div>
 
-            <div>
+            <div class="block min-w-[200px]" style="width: min-content">
               <h3 class="font-bold text-lg text-slate-900">
                 {{ business.name }}
               </h3>
