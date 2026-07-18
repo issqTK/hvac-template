@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { templates } from "@/templates";
 import type { Business } from "@/types/business";
 
-defineProps<{
+const props = defineProps<{
   company: Business;
 }>();
+
+const template = templates[props.company.businessType];
 </script>
 
 <template>
@@ -13,8 +16,8 @@ defineProps<{
     <!-- Background -->
     <div
       :style="{
-        '--hero-image': `url(${company.hero.heroImage})`,
-        '--hero-image-mobile': `url(${company.hero.heroImageMobile})`,
+        '--hero-image': `url(${template.hero.heroImage})`,
+        '--hero-image-mobile': `url(${template.hero.heroImageMobile})`,
       }"
       class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg"
     />
@@ -52,13 +55,13 @@ defineProps<{
         <h2
           class="fade-up delay-3 text-2xl md:text-3xl font-semibold text-slate-100"
         >
-          {{ company.hero.title }}
+          {{ template.hero.title }}
         </h2>
 
         <p
           class="fade-up delay-4 max-w-xl text-lg leading-8 text-slate-300 text-justify"
         >
-          {{ company.hero.sous_title }} à {{ company.city }}.
+          {{ template.hero.sous_title }} à {{ company.city }}.
         </p>
 
         <!-- CTA BUTTONS -->

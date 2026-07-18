@@ -4,6 +4,7 @@ import type { Business } from "@/types/business";
 import SectionHeader from "@/components/reusable/SectionHeader.vue";
 import { vIntersectionObserver } from "@vueuse/components";
 import { ref } from "vue";
+import { templates } from "@/templates/index";
 
 const leftVisible = ref(false);
 
@@ -16,6 +17,8 @@ const onIntersection = (entries: IntersectionObserverEntry[]) => {
 const props = defineProps<{
   company: Business;
 }>();
+
+const template = templates[props.company.businessType];
 
 const form = reactive({
   name: "",
@@ -248,7 +251,7 @@ function submitForm() {
               >
                 <option value="">Choisir un service</option>
                 <option
-                  v-for="service in company.quoteServices"
+                  v-for="service in template.quoteServices"
                   :key="service"
                   :value="service"
                 >

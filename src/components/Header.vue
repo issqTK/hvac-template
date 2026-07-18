@@ -12,7 +12,10 @@
             {{ business.name.charAt(0) }}
           </div>
 
-          <div class="block">
+          <div
+            class="block min-w-[200px]"
+            style="box-sizing: content-box; width: min-content"
+          >
             <h2 class="font-bold text-lg text-slate-900">
               {{ business.name }}
             </h2>

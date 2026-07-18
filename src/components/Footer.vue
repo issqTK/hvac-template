@@ -23,7 +23,7 @@
           </div>
 
           <p class="text-slate-600 leading-7">
-            {{ business.hero.sous_title }}
+            {{ template.hero.sous_title }}
           </p>
         </div>
 
@@ -112,11 +112,16 @@
 </template>
 
 <script setup lang="ts">
+import { templates } from "@/templates";
 import type { Business } from "@/types/business";
 
-defineProps<{
+const props = defineProps<{
   business: Business;
 }>();
+
+let type = props.business.businessType;
+
+const template = templates[type];
 </script>
 
 <style scoped>

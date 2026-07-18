@@ -2,11 +2,16 @@
 import { vIntersectionObserver } from "@vueuse/components";
 import type { Business } from "@/types/business";
 import SectionHeader from "@/components/reusable/SectionHeader.vue";
+import { templates } from "@/templates";
 import { ref } from "vue";
 
-defineProps<{
+const props = defineProps<{
   company: Business;
 }>();
+
+let type = props.company.businessType;
+
+const template = templates[type];
 
 const visibleCards = ref<boolean[]>([]);
 
@@ -25,16 +30,16 @@ const onIntersection = (
     <div class="mx-auto max-w-7xl px-6">
       <!-- Heading -->
       <SectionHeader
-        :badge="company.services.heading.badge"
-        :title="company.services.heading.title"
+        :badge="template.services.heading.badge"
+        :title="template.services.heading.title"
         :companyName="company.name"
-        :description="company.services.heading.subtitle"
+        :description="template.services.heading.subtitle"
       />
 
       <!-- Cards -->
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <article
-          v-for="(service, i) in company.services.items"
+          v-for="(service, i) in template.services.items"
           :key="service.title"
           v-intersection-observer="[
             (entries) => onIntersection(i, entries),

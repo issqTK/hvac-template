@@ -23,6 +23,7 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 import { businesses } from "@/data/businesses.ts";
+import type { Business } from "@/types/business";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Hero from "@/components/Hero.vue";
@@ -35,12 +36,13 @@ import Location from "@/components/Location.vue";
 
 const route = useRoute();
 
-const slug =
-  (route.params.business as string | undefined) ||
-  import.meta.env.VITE_BUSINESS ||
-  "climatek";
+const slug = route.params.business as string | undefined;
 
-const business = businesses[slug];
+const business = businesses.find(
+  (business: Business) => business.slug === slug,
+);
 
-console.log(import.meta.env.VITE_BUSINESS);
+if (!business) {
+  throw new Error(`Business "${slug}" not found.`);
+}
 </script>

@@ -3,6 +3,7 @@ import type { Business } from "@/types/business";
 import SectionHeader from "@/components/reusable/SectionHeader.vue";
 import { vIntersectionObserver } from "@vueuse/components";
 import { ref } from "vue";
+import { templates } from "@/templates";
 
 const selectedImage = ref<string | null>(null);
 
@@ -14,9 +15,13 @@ const closeImage = () => {
   selectedImage.value = null;
 };
 
-defineProps<{
+const props = defineProps<{
   company: Business;
 }>();
+
+let type = props.company.businessType;
+
+const template = templates[type];
 
 const visibleCards = ref<boolean[]>([]);
 
@@ -42,7 +47,7 @@ const onIntersection = (
       <!-- Gallery -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-[220px]">
         <div
-          v-for="(image, index) in company.gallery"
+          v-for="(image, index) in template.gallery"
           :key="image"
           v-intersection-observer="[
             (entries) => onIntersection(index, entries),
