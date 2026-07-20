@@ -192,41 +192,8 @@
     ]
   },
   {
-    "slug": "service-maintenance-climatisation",
-    "name": "Service Climatisation",
-    "city": "Casablanca",
-    "phone": "0660850700",
-    "whatsapp": "0660850700",
-    "address": "27 Rue Socrate, Casablanca 20100",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.1617256401187!2d-7.645513789050774!3d33.5751499732291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2c4c34f411f%3A0xbfb23673bc5ac49!2sService%20Maintenance%20Climatisation!5e0!3m2!1sfr!2sma!4v1783860318959!5m2!1sfr!2sma",
-    "googleCategory": "Service de réparation de systèmes de climatisation",
-    "businessType": "HVAC",
-    "rating": 5,
-    "reviews": 1,
-    "featuredReviews": [
-      {
-        "author": "glissi lahcen",
-        "rating": 5,
-        "date": "il y a 2 ans",
-        "text": "Bravo ! Bon travail !"
-      },
-      {
-        "author": "saad El",
-        "rating": 5,
-        "date": "il y a 2 ans",
-        "text": "Équipe sérieuse et à l'écoute."
-      },
-      {
-        "author": "naji abderrahim",
-        "rating": 5,
-        "date": "il y a 2 ans",
-        "text": "Je recommande sans hésitation !"
-      }
-    ]
-  },
-  {
     "slug": "allo-clim-snc",
-    "name": "ALLO CLIM snc",
+    "name": "ALLO CLIM SNC",
     "city": "Casablanca",
     "phone": "0669999587",
     "whatsapp": "0669999587",
