@@ -22,7 +22,7 @@ const onHeadingIntersection = (entries: IntersectionObserverEntry[]) => {
 <template>
   <div
     v-intersection-observer="[onHeadingIntersection, { threshold: 0.2 }]"
-    class="mx-auto mb-16 max-w-3xl text-center"
+    class="mx-auto mb-16 max-w-4xl text-center"
   >
     <span
       v-if="badge"
